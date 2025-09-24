@@ -4,6 +4,6 @@
 export const SITE_URL = "https://github.com/sudo-adduser-jordan.github.io";
 export const SITE_TITLE = "Jordan";
 export const SITE_DESCRIPTION =
-  "Miniblog is an opinionated and extremely minimal blogging template built with Astro and Tailwind CSS.";
+  "Jordan, Software Engineer";
 
 export const EMAIL = "sudo.sendmail.jordan@gmail.com";
