@@ -6,4 +6,4 @@ export const SITE_TITLE = "Miniblog";
 export const SITE_DESCRIPTION =
   "Miniblog is an opinionated and extremely minimal blogging template built with Astro and Tailwind CSS.";
 
-export const EMAIL = "hello@nicholasly.com";
+export const EMAIL = "sudo.sendmail.jordan@gmail.com";
