@@ -1,11 +1,11 @@
 ---
-title: 'Eve OnLinux A Gamers Guide'
+title: 'Eve Onlinux - A Gamers Guide'
 description: 'Running windows programs on any linux distribution.'
 date: '2025-08-19'
 ---
 ___
 
-## Eve OnLinux A Gamers Guide
+## Eve Onlinux - A Gamers Guide
 
 Due to the reoccurring questions in the official Eve Online linux [*Discord*](https://discord.com/channels/940573867192221696/1096046348421312574) channel this guide has been created.
 
@@ -20,13 +20,13 @@ ___
 
 First make sure you hardware meets the specifications listed [*here*](https://support.eveonline.com/hc/en-us/articles/5885219196828-System-Requirements).
 
-Then choose a *distribution* and a listed option. *It doesn't matter which distribution*, they all will work with the correct configurations.
+Then choose a <mark>distribution</mark> and a listed option. *It doesn't matter which distribution*, they all will work with the correct configurations.
 
 The only difference is the chosen *package manager* and the *source* of the binaries.
 
 Some are more difficult to configure than others.
 
-*No, it does not matter what linux distribution you use*
+<mark>No, it does not matter what linux distribution you use</mark>
 
 The only way you will gain any performance from your hardware is by compiling the programs you are executing.
 
@@ -40,15 +40,15 @@ Also, all the following options run, on wine or a fork of wine maintained by ano
 
 Changing these will result in a similar outcome as the binaries. 
 
-*Just choose an option that works*. Some are more user friendly than others.
+<mark>*Just choose an option that works*</mark>. Some are more user friendly than others.
 
-*Bottles* and *Steam* are the recommended user friendly options.
+<mark>Bottles</mark> and <mark>Steam</mark> are the recommended user friendly options.
 
 ___
 
 ### Options
-- *bottles* (highly recommended, can use the same modified wine as steam and other options)
-- *steam*
+- <mark>bottles</mark> (highly recommended, can use the same modified wine as steam and other options)
+- <mark>steam</mark>
 - *lutris*
 - *wine*
 
@@ -64,59 +64,50 @@ ___
 
 ## > Bottles
 
-1. *Install Flatpak*
+1. Install <mark>Flatpak</mark>
 ```sh
 https://flatpak.org/setup/
 ```
 
-2. *Install Bottles*
+2. Install <mark>Bottles</mark>
 ```sh
 flatpak install flathub com.usebottles.bottles
 ```
 
-3. *Install XDG Portals*
+3. Install <mark>XDG Portals</mark>
 
-Possibly already installed, and only needed for external link functionality.
+> Possibly already installed, and only needed for external link functionality.
 
 ```sh
 https://wiki.archlinux.org/title/XDG_Desktop_Portal
 ```
-4. *Install Runner*
+1. Install a <mark>Runner</mark>
 
-Install the *Kron4ek* runner.
+> Install the <mark>Kron4ek</mark> runner.
 
-`Picture`
+7. Create a <mark>Custom</mark> Bottle 
 
-7. *Create Bottle* 
+> Create a <mark>custom</mark> bottle with the <mark>Kron4ek</mark> runner.
 
-Create a *custom* bottle with the *Kron4ek* runner.
 
-`Picture`
+8. Click <mark>Install</mark>
 
-8. *Click Install*
+> Click instal Eve Online from the <mark>provided</mark> program list.
 
-Click instal Eve Online from the *provided* program list in *bottles*.
-
-`Picture`
-
-9. Test Portals
-
-Once you have logged in. Test portals by opening an external link.
-
-`Picture`
 
 ___
 
 ## > Steam
 
-1. Install Steam
+contribute here
+
+```sh
+https://github.com/sudo-adduser-jordan/sudo-adduser-jordan.github.io
+```
+
 ```sh
 https://store.steampowered.com/about/
 ```
-
-2. Install Eve Online
-
-`Picture`
 
 
 ___
@@ -151,13 +142,13 @@ ___
 
 ### Troubleshooting
 
-*Update your system and related programs before continuing!*
+<mark>*Update your system and related programs before continuing!*<mark>
 
-This is likely the *cause* of your launcher an [*Electron*](https://www.electronjs.org/) application not launching.
+This is likely the <mark>*cause*</mark> of your launcher an [*Electron*](https://www.electronjs.org/) application not launching.
 
-Usually it is a related mesa / wine update on the *SYSTEM* and your in your chosen *OPTION*.
+Usually it is a related mesa or wine update on the <mark>*SYSTEM*</mark> and your in your chosen <mark>*OPTION*</mark>.
 
-Next check bottles / wine for available *DXVK* , *VKD3D* , and *Runner* updates.
+Next check bottles and wine for available <mark>*DXVK*</mark> , <mark>*VKD3D*</mark> , and <mark>*Runner*</mark> updates.
 
 If the runner is up to date, there are other runners available, downgrading is a possible option, but changing runners is a more likely solution.
 
