@@ -91,6 +91,12 @@ const {
         : "light";
     }
 
+      
+    if (theme == 'dark')  document.documentElement.setAttribute('data-theme', 'catppuccin-macchio'); 
+
+    if (theme == 'light') document.documentElement.setAttribute('data-theme', 'catppuccin-latte');
+
+
     document.documentElement.classList[theme ? "add" : "remove"](theme);
 
     if (typeof localStorage !== "undefined") {
