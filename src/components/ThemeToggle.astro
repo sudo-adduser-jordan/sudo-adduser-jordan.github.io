@@ -29,20 +29,14 @@
 </button>
 
 <script>
-  const setListener = () => {
-    const button = document.getElementById("theme-toggle");
-
-    button?.addEventListener("click", () => {
+function setListener() {
+    document.getElementById("theme-toggle")?.addEventListener("click", () => {
       document.documentElement.classList.toggle("dark");
-
       const currentTheme = document.documentElement.getAttribute('data-theme'); 
-      // console.log(currentTheme) 
-      const newTheme = currentTheme === 'catppuccin-latte' ? 'catppuccin-macchiato' : 'catppuccin-latte';  
-      document.documentElement.setAttribute('data-theme', newTheme);  
+      if (currentTheme == 'catppuccin-latte') document.documentElement.setAttribute('data-theme', 'catppuccin-mocha');  
+      if (currentTheme == 'catppuccin-mocha') document.documentElement.setAttribute('data-theme', 'catppuccin-latte');  
     });
-  };
+};
 
-  setListener();
-
-  document.addEventListener("astro:after-swap", setListener);
+document.addEventListener("astro:after-swap", setListener);
 </script>
