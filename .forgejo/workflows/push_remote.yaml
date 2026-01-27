@@ -28,11 +28,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
         run: |
-          echo git remote add github https://github.com/${{ github.repository }}.git
-          git remote add github https://github.com/${{ github.repository }}.git
+          echo git remote add github https://github.com/sudo-adduser-jordan/sudo-adduser-jordan.github.io.git
+          git remote add github https://github.com/sudo-adduser-jordan/sudo-adduser-jordan.github.io.git
 
-          echo git push -f https://$GITHUB_TOKEN@github.com/${{ github.repository }}.git
-          git push -f https://$GITHUB_TOKEN@github.com/${{ github.repository }}.git
+          echo git push -f https://$GITHUB_TOKEN@github.com/sudo-adduser-jordan/sudo-adduser-jordan.github.io.git
+          git push -f https://$GITHUB_TOKEN@github.com/sudo-adduser-jordan/sudo-adduser-jordan.github.io.git
 
       - name: Push to Codeberg
         env:
