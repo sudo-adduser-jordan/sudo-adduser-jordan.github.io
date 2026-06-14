@@ -1,0 +1,58 @@
+
+
+
+#!/bin/bash
+
+TARGET_URL="https://kalil0321.com"
+DOMAIN="kalil0321.com"
+
+echo "=== Starting Dynamic Fetch for $TARGET_URL ==="
+
+# 1. Download the core index.html file
+echo "Fetching index.html..."
+curl -s "$TARGET_URL" > index.html
+
+# 2. Extract and download all assets from the HTML file dynamically
+# This looks for any paths containing _next/ and extracts the clean file paths
+echo "Scanning index.html for assets..."
+assets=$(grep -oE '_next/[^"'\'' >]+' index.html | sed 's/%3F.*//g' | sed 's/?.*//g' | sort -u)
+
+for asset in $assets; do
+    # Create local directories matching the asset path structure
+    dir_path=$(dirname "$asset")
+    mkdir -p "$dir_path"
+    
+    echo "Downloading dynamic asset: $asset"
+    curl -s "$TARGET_URL/$asset" > "$asset"
+done
+
+# 3. Next.js Deep-Scan: Read downloaded JS chunks to find lazy-loaded references
+# Next.js applications hide future code chunks inside their initial bundle files.
+echo "Deep-scanning downloaded JS chunks for lazy-loaded assets..."
+if [ -d "_next/static/chunks" ]; then
+    # Look for patterns like "static/chunks/... .js" or "static/media/... .woff2" hidden inside the JS text
+    hidden_assets=$(grep -r -oE 'static/(chunks|media)/[a-zA-Z0-9\._-]+\.(js|woff2)' _next/static/chunks/ 2>/dev/null | awk -F: '{print $2}' | sort -u)
+    
+    for h_asset in $hidden_assets; do
+        full_path="_next/$h_asset"
+        if [ ! -f "$full_path" ]; then
+            mkdir -p "$(dirname "$full_path")"
+            echo "Found and downloading hidden lazy-loaded chunk: $full_path"
+            curl -s "$TARGET_URL/$full_path" > "$full_path"
+        fi
+    done
+fi
+
+# 4. Clean up the tracking parameters inside index.html so it targets local files perfectly
+echo "Cleaning up local reference URLs in index.html..."
+# This removes %3Fdpl=... or ?dpl=... parameter tails strings completely
+sed -i.bak -E 's/%3Fdpl=[^"'\''\s]*//g' index.html
+sed -i.bak -E 's/\?dpl=[^"'\''\s]*//g' index.html
+rm -f index.html.bak
+
+# 5. Grab standard root assets
+echo "Grabbing root icons and manifests..."
+curl -s "$TARGET_URL/favicon.ico" > favicon.ico
+curl -s "$TARGET_URL/site.webmanifest" > site.webmanifest
+
+echo "=== Complete! Run 'python -m http.server 8000' to host your perfect offline mirror ==="
