@@ -43,6 +43,9 @@ function GhIcon({ className }: { className?: string }) {
 export default function ProjectCard({ title, description, icon, links }: ProjectCardProps) {
   const IconComponent = icon && !icon.startsWith("/") ? iconMap[icon] : null
 
+  // Find the 'demo' link first, fallback to the first link (or GitHub/whatever is available)
+  const primaryLink = links.find((l) => l.label.toLowerCase() === "demo") || links[0]
+
   return (
     <article className="group flex items-baseline justify-between gap-4 py-3.5 border-b border-neutral-100 dark:border-neutral-900 last:border-b-0">
       <div className="flex items-baseline gap-3 min-w-0">
@@ -55,9 +58,22 @@ export default function ProjectCard({ title, description, icon, links }: Project
         ) : IconComponent ? (
           <IconComponent className="w-3.5 h-3.5 text-neutral-400 dark:text-neutral-500 shrink-0 relative top-[1.5px]" />
         ) : null}
-        <h3 className="text-sm sm:text-base font-medium text-neutral-700 dark:text-neutral-200 group-hover:text-neutral-900 dark:group-hover:text-white transition-colors duration-200 whitespace-nowrap">
-          {title}
-        </h3>
+
+        {primaryLink ? (
+          <a
+            href={primaryLink.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm sm:text-base font-medium text-neutral-700 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200 whitespace-nowrap cursor-pointer"
+          >
+            {title}
+          </a>
+        ) : (
+          <h3 className="text-sm sm:text-base font-medium text-neutral-700 dark:text-neutral-200 whitespace-nowrap">
+            {title}
+          </h3>
+        )}
+
         {description && (
           <p className="text-xs text-neutral-400 dark:text-neutral-600 truncate hidden md:block">
             {description}
