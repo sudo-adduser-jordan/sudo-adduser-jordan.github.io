@@ -6,7 +6,7 @@ export const personal = {
 	hero: {
 		line1: "software engineer",
 		line2: "_",
-		cta: "software developer",
+		cta: "computer scientist",
 	},
 }
 
