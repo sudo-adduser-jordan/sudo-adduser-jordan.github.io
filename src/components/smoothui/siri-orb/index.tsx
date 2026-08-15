@@ -177,7 +177,6 @@ const SiriOrb: React.FC<SiriOrbProps> = ({
           --angle-2: 0deg;
           display: grid;
           grid-template-areas: "stack";
-          overflow: hidden;
           border-radius: 50%;
           position: relative;
           box-shadow: 0 0 45px -5px color-mix(in srgb, var(--c3) 40%, transparent),
