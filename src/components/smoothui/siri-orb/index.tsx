@@ -129,6 +129,9 @@ const SiriOrb: React.FC<SiriOrbProps> = ({
 
       if (orbRef.current) {
         orbRef.current.style.setProperty("--angle", `${angle}deg`);
+        orbRef.current.style.setProperty("--angle2", `${angle * 2}deg`);
+        orbRef.current.style.setProperty("--angle-3", `${angle * -3}deg`);
+        orbRef.current.style.setProperty("--angle-2", `${angle * -2}deg`);
       }
 
       animationFrameId = requestAnimationFrame(animate);
@@ -155,9 +158,13 @@ const SiriOrb: React.FC<SiriOrbProps> = ({
           "--c3": finalColors.c3,
           "--animation-duration": `${animationDuration}s`,
           "--blur-amount": `${blurAmount}px`,
+          "--blur-2": `${blurAmount * 2}px`,
           "--contrast-amount": finalContrast,
+          "--contrast-2": finalContrast * 2,
           "--dot-size": `${dotSize}px`,
+          "--dot-size-2": `${dotSize * 2}px`,
           "--shadow-spread": `${shadowSpread}px`,
+          "--shadow-spread-tenth": `${shadowSpread * 0.2}px`,
           "--mask-radius": maskRadius,
         } as React.CSSProperties
       }
@@ -165,11 +172,16 @@ const SiriOrb: React.FC<SiriOrbProps> = ({
       <style>{`
         .siri-orb {
           --angle: 0deg;
+          --angle2: 0deg;
+          --angle-3: 0deg;
+          --angle-2: 0deg;
           display: grid;
           grid-template-areas: "stack";
           overflow: hidden;
           border-radius: 50%;
           position: relative;
+          box-shadow: 0 0 45px -5px color-mix(in srgb, var(--c3) 40%, transparent),
+            0 0 90px -15px color-mix(in srgb, var(--c1) 35%, transparent);
         }
 
         .siri-orb::before,
@@ -185,43 +197,43 @@ const SiriOrb: React.FC<SiriOrbProps> = ({
         .siri-orb::before {
           background:
             conic-gradient(
-              from calc(var(--angle) * 2) at 25% 70%,
+              from var(--angle2) at 25% 70%,
               var(--c3),
               transparent 20% 80%,
               var(--c3)
             ),
             conic-gradient(
-              from calc(var(--angle) * 2) at 45% 75%,
+              from var(--angle2) at 45% 75%,
               var(--c2),
               transparent 30% 60%,
               var(--c2)
             ),
             conic-gradient(
-              from calc(var(--angle) * -3) at 80% 20%,
+              from var(--angle-3) at 80% 20%,
               var(--c1),
               transparent 40% 60%,
               var(--c1)
             ),
             conic-gradient(
-              from calc(var(--angle) * 2) at 15% 5%,
+              from var(--angle2) at 15% 5%,
               var(--c2),
               transparent 10% 90%,
               var(--c2)
             ),
             conic-gradient(
-              from calc(var(--angle) * 1) at 20% 80%,
+              from var(--angle) at 20% 80%,
               var(--c1),
               transparent 10% 90%,
               var(--c1)
             ),
             conic-gradient(
-              from calc(var(--angle) * -2) at 85% 10%,
+              from var(--angle-2) at 85% 10%,
               var(--c3),
               transparent 20% 80%,
               var(--c3)
             );
           box-shadow: inset var(--bg) 0 0 var(--shadow-spread)
-            calc(var(--shadow-spread) * 0.2);
+            var(--shadow-spread-tenth);
           filter: blur(var(--blur-amount)) contrast(var(--contrast-amount));
           animation: none;
         }
@@ -232,9 +244,8 @@ const SiriOrb: React.FC<SiriOrbProps> = ({
             var(--bg) var(--dot-size),
             transparent var(--dot-size)
           );
-          background-size: calc(var(--dot-size) * 2) calc(var(--dot-size) * 2);
-          backdrop-filter: blur(calc(var(--blur-amount) * 2))
-            contrast(calc(var(--contrast-amount) * 2));
+          background-size: var(--dot-size-2) var(--dot-size-2);
+          backdrop-filter: blur(var(--blur-2)) contrast(var(--contrast-2));
           mix-blend-mode: overlay;
         }
 
