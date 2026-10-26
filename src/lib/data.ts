@@ -67,6 +67,16 @@ export const projects = [
 			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/algorithm-visualizer/" },
 		],
 	},
+		{
+		title: "market mailer",
+		description: "Eve online liveLive Eve Online market dump and mail service. ",
+		icon: "Mail",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
+			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmaupdailer/" },
+		],
+	},
+
 	{
 		title: "openats",
 		description: "An open source ATS collection service",
@@ -82,14 +92,6 @@ export const projects = [
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/stroke-prediction" },
 			{ label: "demo", href: "https://stroke-prediction-sklearn.streamlit.app/" },
-		],
-	},
-	{
-		title: "market mailer",
-		description: "Eve online liveLive Eve Online market dump and mail service. ",
-		icon: "Mail",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
 		],
 	},
 	{
