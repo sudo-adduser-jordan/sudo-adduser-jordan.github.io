@@ -55,7 +55,7 @@ export const projects = [
 		icon: "/linuxthemes.png",
 		links: [
 			{ label: "gh", href: "https://github.com/linuxthemes" },
-			{ label: "demo", href: "https://openapply.vercel.app" },
+			{ label: "demo", href: "https://linuxthemes.org" },
 		],
 	},
 	{
