@@ -73,7 +73,7 @@ export const projects = [
 		icon: "Mail",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
-			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmaupdailer/" },
+			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmailer/" },
 		],
 	},
 
