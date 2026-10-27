@@ -110,6 +110,16 @@ export const resources = [
 	{ name: "arch community packages", href: "https://aur.archlinux.org/" },
 	{ name: "linux themes", href: "https://linuxthemes.org/" },
 	{ name: "logging sucks", href: "https://loggingsucks.com/" },
-
+	{ name: "linux from scratch", href: "https://www.linuxfromscratch.org/lfs/" },
+	{ name: "gentoo handbook", href: "https://wiki.gentoo.org/wiki/Handbook:Main_Page" },
+	{ name: "explain shell", href: "https://explainshell.com/" },
+	{ name: "devdocs", href: "https://devdocs.io/" },
+	{ name: "hacker news", href: "https://news.ycombinator.com/" },
+	{ name: "headless ui", href: "https://headlessui.com/" },
+	{ name: "iconify", href: "https://icon-sets.iconify.design/" },
+	{ name: "owasp cheat sheet", href: "https://cheatsheetseries.owasp.org/index.html" },
+	{ name: "cve advisories", href: "https://github.com/advisories" },
+	{ name: "fontshare", href: "https://www.fontshare.com/" },
+	{ name: "awesome selfhosted", href: "https://awesome-selfhosted.net/" },
 ]
 
