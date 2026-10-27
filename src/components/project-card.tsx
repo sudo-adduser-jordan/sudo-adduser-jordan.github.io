@@ -1,4 +1,4 @@
-import { ExternalLink, Search, FileCheck, Palette, GitBranch, HeartPulse, Mail, Box, Cog, Square, VectorSquare } from "lucide-react"
+import { ExternalLink, Search, FileCheck, Palette, GitBranch, HeartPulse, Mail, Box, Cog, VectorSquare, Globe, Sparkles, Package, FileCode, Bot, Radar, Terminal, Map, Container, BookOpen, Workflow, Puzzle, Cpu, Network, Server, Trophy } from "lucide-react"
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Search,
@@ -10,6 +10,22 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Box,
   Cog,
   VectorSquare,
+  Globe,
+  Sparkles,
+  Package,
+  FileCode,
+  Bot,
+  Radar,
+  Terminal,
+  Map,
+  Container,
+  BookOpen,
+  Workflow,
+  Puzzle,
+  Cpu,
+  Network,
+  Server,
+  Trophy,
 }
 
 interface ProjectLink {
