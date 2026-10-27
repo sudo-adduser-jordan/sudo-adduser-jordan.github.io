@@ -246,6 +246,21 @@ export const projects = [
 
 export const packageGroups = [
 	{
+		label: "runelite",
+		href: "https://runelite.net/plugin-hub",
+		source: "plugin hub",
+		packages: [
+			{
+				name: "skull prevention reminder",
+				atom: "",
+				version: "plugin",
+				variant: "plugin",
+				description: "A visual indicator of skull prevention status",
+				href: "https://runelite.net/plugin-hub/show/skull-prevention-reminder",
+			},
+		],
+	},
+	{
 		label: "usebottles installers",
 		href: "https://usebottles.com/app",
 		source: "app store",
