@@ -36,6 +36,7 @@ export const socials = [
 export const navItems = [
 	{ label: "home", href: "#home", dashColor: "#3b82f6" },
 	{ label: "projects", href: "#projects", dashColor: "#10b981" },
+	{ label: "packages", href: "#packages", dashColor: "#f59e0b" },
 	{ label: "resources", href: "#resources", dashColor: "#8b5cf6" },
 ]
 
@@ -239,6 +240,135 @@ export const projects = [
 		icon: "Box",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/console-graphics-engine" },
+		],
+	},
+]
+
+export const packageGroups = [
+	{
+		label: "usebottles installers",
+		href: "https://usebottles.com/app",
+		source: "app store",
+		packages: [
+			{
+				name: "eve online",
+				atom: "",
+				version: "Gold",
+				variant: "installer",
+				description: "The official EVE Online launcher",
+				href: "https://usebottles.com/app#eveonline",
+			},
+			{
+				name: "eve frontier",
+				atom: "",
+				version: "Gold",
+				variant: "installer",
+				description: "The official EVE Frontier launcher",
+				href: "https://usebottles.com/app#evefrontier",
+			},
+		],
+	},
+	{
+		label: "jentoo overlay",
+		href: "https://github.com/sudo-adduser-jordan/jentoo",
+		source: "repo",
+		packages: [
+			{
+				name: "clamui",
+				atom: "app-antivirus/clamui",
+				version: "0.4.1",
+				variant: "source",
+				description: "Modern GTK4/libadwaita interface for the ClamAV scanner",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/app-antivirus/clamui",
+			},
+			{
+				name: "clamui-bin",
+				atom: "app-antivirus/clamui-bin",
+				version: "0.4.1",
+				variant: "bin",
+				description: "AppImage build of ClamUI, the GTK4/libadwaita ClamAV frontend",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/app-antivirus/clamui-bin",
+			},
+			{
+				name: "desktop-plus-bin",
+				atom: "app-misc/desktop-plus-bin",
+				version: "3.6.8.1",
+				variant: "bin",
+				description: "GitHub Desktop fork with advanced functionality and improvements",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/app-misc/desktop-plus-bin",
+			},
+			{
+				name: "jeveassets-bin",
+				atom: "games-util/jeveassets-bin",
+				version: "8.2.2",
+				variant: "bin",
+				description: "Out-of-game asset manager for EVE Online",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/games-util/jeveassets-bin",
+			},
+			{
+				name: "pyfa",
+				atom: "games-util/pyfa",
+				version: "2.69.3",
+				variant: "source",
+				description: "Python fitting assistant and ship fitting tool for EVE Online",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/games-util/pyfa",
+			},
+			{
+				name: "pyfa-bin",
+				atom: "games-util/pyfa-bin",
+				version: "2.69.3",
+				variant: "bin",
+				description: "Prebuilt Python fitting assistant for EVE Online",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/games-util/pyfa-bin",
+			},
+			{
+				name: "gufw",
+				atom: "net-firewall/gufw",
+				version: "26.04",
+				variant: "source",
+				description: "Graphical user interface for ufw",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/net-firewall/gufw",
+			},
+			{
+				name: "portmaster",
+				atom: "net-firewall/portmaster",
+				version: "2.2.3",
+				variant: "source",
+				description: "Application firewall and network monitor",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/net-firewall/portmaster",
+			},
+			{
+				name: "pvpn",
+				atom: "net-vpn/pvpn",
+				version: "0.2.10",
+				variant: "source",
+				description: "Lightweight Proton VPN client with a terminal UI, built from source",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/net-vpn/pvpn",
+			},
+			{
+				name: "pvpn-bin",
+				atom: "net-vpn/pvpn-bin",
+				version: "0.2.10",
+				variant: "bin",
+				description: "Lightweight Proton VPN client with a terminal UI, prebuilt",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/net-vpn/pvpn-bin",
+			},
+			{
+				name: "wattseal",
+				atom: "sys-power/wattseal",
+				version: "1.0.6",
+				variant: "source",
+				description: "Real-time PC power consumption monitor, per-app and per-component",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/sys-power/wattseal",
+			},
+			{
+				name: "wattseal-bin",
+				atom: "sys-power/wattseal-bin",
+				version: "1.0.6",
+				variant: "bin",
+				description: "Prebuilt real-time PC power consumption monitor",
+				href: "https://github.com/sudo-adduser-jordan/jentoo/tree/main/sys-power/wattseal-bin",
+			},
 		],
 	},
 ]

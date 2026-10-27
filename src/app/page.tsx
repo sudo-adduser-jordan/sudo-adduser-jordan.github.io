@@ -1,6 +1,7 @@
 import Sidebar from "@/components/sidebar"
 import Hero from "@/components/hero"
 import Projects from "@/components/projects"
+import Packages from "@/components/packages"
 import Resources from "@/components/resources"
 import Timeline from "@/components/timeline"
 
@@ -27,6 +28,7 @@ export default function Home() {
         </div> */}
 				<Hero />
 				<Projects />
+				<Packages />
 				<Resources />
 				<Timeline />
 			</main>
