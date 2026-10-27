@@ -62,6 +62,11 @@ export default function ProjectCard({ title, description, icon, links }: Project
   // Find the 'demo' link first, fallback to the first link (or GitHub/whatever is available)
   const primaryLink = links.find((l) => l.label.toLowerCase() === "demo") || links[0]
 
+  // Render GitHub last so its icon sits to the right of the external link icon
+  const orderedLinks = [...links].sort(
+    (a, b) => (a.label === "gh" ? 1 : 0) - (b.label === "gh" ? 1 : 0)
+  )
+
   return (
     <article className="group flex items-baseline justify-between gap-4 py-3.5 border-b border-neutral-100 dark:border-neutral-900 last:border-b-0">
       <div className="flex items-baseline gap-3 min-w-0">
@@ -97,21 +102,19 @@ export default function ProjectCard({ title, description, icon, links }: Project
         )}
       </div>
       <div className="flex items-center gap-4 sm:gap-3 shrink-0">
-        {links.map((link) => (
+        {orderedLinks.map((link) => (
           <a
             key={link.label}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={link.label}
             className="text-xs text-neutral-400 dark:text-neutral-600 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors duration-200"
           >
             {link.label === "gh" ? (
               <GhIcon className="w-3 h-3" />
             ) : (
-              <span className="flex items-center gap-1">
-                {link.label}
-                <ExternalLink className="w-2.5 h-2.5" />
-              </span>
+              <ExternalLink className="w-2.5 h-2.5" />
             )}
           </a>
         ))}
