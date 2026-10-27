@@ -57,9 +57,6 @@ export default function Packages() {
 											</p>
 										</div>
 										<div className="flex items-center gap-2 sm:gap-3 shrink-0">
-											<span className="text-[10px] uppercase tracking-wider text-neutral-400 dark:text-neutral-600 border border-neutral-200 dark:border-neutral-800 rounded px-1.5 py-0.5">
-												{pkg.variant}
-											</span>
 											<span className="text-xs text-neutral-400 dark:text-neutral-600 font-mono">
 												{pkg.version}
 											</span>
