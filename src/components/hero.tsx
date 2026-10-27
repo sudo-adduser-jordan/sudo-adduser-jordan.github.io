@@ -3,7 +3,7 @@ import SiriOrb from "./smoothui/siri-orb"
 
 export default function Hero() {
 	return (
-		<section id="home" className="min-h-[70vh] lg:min-h-screen flex flex-col items-center justify-center gap-6 text-center relative">
+		<section id="home" className="flex flex-col items-center justify-center gap-6 text-center relative py-16 lg:py-24">
 
 			<SiriOrb />
 			{/* <div className="flex justify-center items-center p-4">

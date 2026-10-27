@@ -2,7 +2,7 @@ import { resources } from "@/lib/data"
 
 export default function Resources() {
   return (
-    <section id="resources" className="min-h-0 lg:min-h-screen flex flex-col justify-center py-16 lg:py-0">
+    <section id="resources" className="flex flex-col py-16 lg:py-24">
       <section className="flex flex-col gap-8">
         <h2 className="text-xs tracking-[0.2em] uppercase text-neutral-400 dark:text-neutral-500">
           Resources

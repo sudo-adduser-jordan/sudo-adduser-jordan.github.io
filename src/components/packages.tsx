@@ -3,7 +3,7 @@ import { packageGroups } from "@/lib/data"
 
 export default function Packages() {
 	return (
-		<section id="packages" className="min-h-0 lg:min-h-screen flex flex-col justify-center py-16 lg:py-0">
+		<section id="packages" className="flex flex-col py-16 lg:py-24">
 			<section className="flex flex-col gap-8">
 				<div className="flex items-center gap-6">
 					<h2 className="text-xs tracking-[0.2em] uppercase text-neutral-400 dark:text-neutral-500">

@@ -3,7 +3,7 @@ import ProjectCard from "./project-card"
 
 export default function Projects() {
   return (
-    <section id="projects" className="min-h-0 lg:min-h-screen flex flex-col justify-center py-16 lg:py-0">
+    <section id="projects" className="flex flex-col py-16 lg:py-24">
       <section className="flex flex-col gap-8 relative">
         <div className="absolute -inset-8 dot-grid opacity-40 pointer-events-none rounded-lg" />
 
