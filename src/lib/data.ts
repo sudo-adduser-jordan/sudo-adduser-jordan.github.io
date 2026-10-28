@@ -59,13 +59,49 @@ export const projects = [
 			{ label: "demo", href: "https://linuxthemes.org" },
 		],
 	},
-	{
-		title: "portfolio",
-		description: "Personal site built with Next.js and Tailwind",
-		icon: "Globe",
+		{
+		title: "market mailer",
+		description: "Live Eve Online market dump and mail service",
+		icon: "Mail",
 		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/sudo-adduser-jordan.github.io" },
-			{ label: "demo", href: "https://sudo-adduser-jordan.github.io" },
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
+			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmailer/" },
+		],
+	},
+		{
+		title: "algorithm visualizer",
+		description: "Interactive visualizations to help you understand how algorithms work step-by-step",
+		icon: "VectorSquare",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/algorithm-visualizer" },
+			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/algorithm-visualizer/" },
+		],
+	},
+
+		{
+		title: "code racer",
+		description: "Multiplayer coding game built with Next.js",
+		icon: "Trophy",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/code-racer" },
+			{ label: "demo", href: "https://code-racer-eight.vercel.app" },
+		],
+	},
+
+		{
+		title: "actions",
+		description: "Reusable GitHub Actions workflows",
+		icon: "Workflow",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/actions" },
+		],
+	},
+		{
+		title: "scripts",
+		description: "Shell scripts for setup and backups",
+		icon: "FileCode",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/scripts" },
 		],
 	},
 	{
@@ -76,6 +112,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/skills" },
 		],
 	},
+
 	{
 		title: "jentoo",
 		description: "Personal Gentoo overlay tracking GURU plus custom packages",
@@ -92,40 +129,9 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/openats" },
 		],
 	},
-	{
-		title: "market mailer",
-		description: "Live Eve Online market dump and mail service",
-		icon: "Mail",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
-			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmailer/" },
-		],
-	},
-	{
-		title: "github profile",
-		description: "Profile README and language stats",
-		icon: "GitBranch",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan" },
-		],
-	},
-	{
-		title: "scripts",
-		description: "Shell scripts for setup and backups",
-		icon: "FileCode",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/scripts" },
-		],
-	},
-	{
-		title: "open agents",
-		description: "Plan, run, and supervise coding agents from one place",
-		icon: "Bot",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/openagents" },
-			{ label: "releases", href: "https://github.com/sudo-adduser-jordan/openagents/releases" },
-		],
-	},
+
+
+
 	{
 		title: "lazynmap",
 		description: "Keyboard-driven terminal UI for nmap",
@@ -151,47 +157,8 @@ export const projects = [
 			{ label: "demo", href: "https://tripwire.gigalixirapp.com/" },
 		],
 	},
-	{
-		title: "docker",
-		description: "Self-hosted Docker Compose service stack",
-		icon: "Container",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/docker" },
-		],
-	},
-	{
-		title: "blog",
-		description: "Personal blog built with Astro",
-		icon: "BookOpen",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/blog" },
-		],
-	},
-	{
-		title: "algorithm visualizer",
-		description: "Interactive visualizations to help you understand how algorithms work step-by-step",
-		icon: "VectorSquare",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/algorithm-visualizer" },
-			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/algorithm-visualizer/" },
-		],
-	},
-	{
-		title: "actions",
-		description: "Reusable GitHub Actions workflows",
-		icon: "Workflow",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/actions" },
-		],
-	},
-	{
-		title: "advent of code",
-		description: "Advent of Code solutions in C++",
-		icon: "Puzzle",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/advent-of-code" },
-		],
-	},
+
+
 	{
 		title: "stroke prediction",
 		description: "A supervised machine Random Forest Classifier to predict patient stroke risk",
@@ -217,23 +184,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/protohackers" },
 		],
 	},
-	{
-		title: "http server",
-		description: "Concurrent HTTP server with thread pool, in C",
-		icon: "Server",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/http-server-c" },
-		],
-	},
-	{
-		title: "code racer",
-		description: "Multiplayer coding game built with Next.js",
-		icon: "Trophy",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/code-racer" },
-			{ label: "demo", href: "https://code-racer-eight.vercel.app" },
-		],
-	},
+
 	{
 		title: "console graphics engine",
 		description: "Console 3D graphics engine",
@@ -242,7 +193,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/console-graphics-engine" },
 		],
 	},
-]
+	]
 
 export const packageGroups = [
 	{
