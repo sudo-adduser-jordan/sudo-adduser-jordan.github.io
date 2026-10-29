@@ -59,6 +59,14 @@ export const projects = [
 			{ label: "demo", href: "https://linuxthemes.org" },
 		],
 	},
+	{
+		title: "jentoo",
+		description: "Personal Gentoo overlay tracking GURU plus custom packages",
+		icon: "/favicon.ico",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/jentoo" },
+		],
+	},
 		{
 		title: "algorithm visualizer",
 		description: "Interactive visualizations to help you understand how algorithms work step-by-step",
@@ -123,14 +131,6 @@ export const projects = [
 		],
 	},
 
-	{
-		title: "jentoo",
-		description: "Personal Gentoo overlay tracking GURU plus custom packages",
-		icon: "Package",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/jentoo" },
-		],
-	},
 	{
 		title: "openats",
 		description: "An open source ATS collection service",
