@@ -40,6 +40,36 @@ interface ProjectCardProps {
   links: ProjectLink[]
 }
 
+function MarketMailerLogo({ className }: { className?: string }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={`${className ?? ""} grid place-items-center select-none text-[11px] leading-none font-extrabold text-white dark:text-[#04121a] bg-[linear-gradient(135deg,#00e5ff,#1a8fd1)] [clip-path:polygon(0_0,100%_0,100%_72%,72%_100%,0_100%)] shadow-none dark:shadow-[0_0_18px_rgba(0,229,255,0.25)]`}
+    >
+      M
+    </span>
+  )
+}
+
+function AlgorithmVisualizerIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={`${className ?? ""} text-blue-600 dark:text-blue-500`}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+      />
+    </svg>
+  )
+}
+
 function GhIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -70,7 +100,11 @@ export default function ProjectCard({ title, description, icon, links }: Project
   return (
     <article className="group flex items-baseline justify-between gap-4 py-3.5 border-b border-neutral-100 dark:border-neutral-900 last:border-b-0">
       <div className="flex items-baseline gap-3 min-w-0">
-        {icon && icon.startsWith("/") ? (
+        {icon === "marketmailer" ? (
+          <MarketMailerLogo className="w-5 h-5 shrink-0 relative top-[1.5px]" />
+        ) : icon === "algorithm-visualizer" ? (
+          <AlgorithmVisualizerIcon className="w-5 h-5 shrink-0 relative top-[1.5px]" />
+        ) : icon && icon.startsWith("/") ? (
           <img
             src={icon}
             alt=""

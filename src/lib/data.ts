@@ -51,7 +51,7 @@ export const projects = [
 		],
 	},
 	{
-		title: "linux themes",
+		title: "linuxthemes",
 		description: "Themes and program state configuration",
 		icon: "/linuxthemes.png",
 		links: [
@@ -60,23 +60,24 @@ export const projects = [
 		],
 	},
 		{
-		title: "market mailer",
-		description: "Live Eve Online market dump and mail service",
-		icon: "Mail",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
-			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmailer/" },
-		],
-	},
-		{
 		title: "algorithm visualizer",
 		description: "Interactive visualizations to help you understand how algorithms work step-by-step",
-		icon: "VectorSquare",
+		icon: "algorithm-visualizer",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/algorithm-visualizer" },
 			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/algorithm-visualizer/" },
 		],
 	},
+	{
+		title: "marketmailer",
+		description: "Live Eve Online market dump and mail service",
+		icon: "marketmailer",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
+			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmailer/" },
+		],
+	},
+
 
 		{
 		title: "code racer",
