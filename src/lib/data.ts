@@ -159,6 +159,7 @@ export const projects = [
 		icon: "Box",
 		links: [
 			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/evetools/" },
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/evetools" },
 		],
 	},
 
