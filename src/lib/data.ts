@@ -134,7 +134,7 @@ export const projects = [
 	{
 		title: "openats",
 		description: "An open source ATS collection service",
-		icon: "Cog",
+		icon: "Terminal",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/openats" },
 		],
@@ -145,7 +145,7 @@ export const projects = [
 	{
 		title: "lazynmap",
 		description: "Keyboard-driven terminal UI for nmap",
-		icon: "Radar",
+		icon: "Terminal",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/lazynmap" },
 		],
@@ -161,7 +161,7 @@ export const projects = [
 	{
 		title: "tripwire",
 		description: "Eve Online mapping tool",
-		icon: "Map",
+		icon: "Box",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/tripwire" },
 			{ label: "demo", href: "https://tripwire.gigalixirapp.com/" },
@@ -171,20 +171,11 @@ export const projects = [
 	{
 		title: "basic84",
 		description: "TI-84 BASIC programs",
-		icon: "Cpu",
+		icon: "Box",
 		links: [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/basic84" },
 		],
 	},
-	{
-		title: "protohackers",
-		description: "Java solutions and tests for Protohackers challenges",
-		icon: "Network",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/protohackers" },
-		],
-	},
-
 	{
 		title: "console graphics engine",
 		description: "Console 3D graphics engine",
