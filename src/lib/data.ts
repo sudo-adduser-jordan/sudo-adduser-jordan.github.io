@@ -67,7 +67,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/jentoo" },
 		],
 	},
-		{
+	{
 		title: "algorithm visualizer",
 		description: "Interactive visualizations to help you understand how algorithms work step-by-step",
 		icon: "algorithm-visualizer",
@@ -95,8 +95,7 @@ export const projects = [
 		],
 	},
 
-
-		{
+	{
 		title: "code racer",
 		description: "Multiplayer coding game built with Next.js",
 		icon: "/coderacer.png",
@@ -106,7 +105,7 @@ export const projects = [
 		],
 	},
 
-		{
+	{
 		title: "actions",
 		description: "Reusable GitHub Actions workflows",
 		icon: "Workflow",
@@ -114,7 +113,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/actions" },
 		],
 	},
-		{
+	{
 		title: "scripts",
 		description: "Shell scripts for setup and backups",
 		icon: "FileCode",
@@ -130,6 +129,8 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/skills" },
 		],
 	},
+
+
 
 	{
 		title: "openats",
@@ -158,6 +159,18 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/gentooinstall" },
 		],
 	},
+
+
+	{
+		title: "evetools",
+		description: "Eve Online tools",
+		icon: "Box",
+		links: [
+			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/evetools/" },
+		],
+	},
+
+
 	{
 		title: "tripwire",
 		description: "Eve Online mapping tool",
@@ -184,7 +197,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/console-graphics-engine" },
 		],
 	},
-	]
+]
 
 export const packageGroups = [
 	{
