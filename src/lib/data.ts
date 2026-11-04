@@ -60,14 +60,6 @@ export const projects = [
 		],
 	},
 	{
-		title: "jentoo",
-		description: "Personal Gentoo overlay tracking GURU plus custom packages",
-		icon: "/favicon.ico",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/jentoo" },
-		],
-	},
-	{
 		title: "algorithm visualizer",
 		description: "Interactive visualizations to help you understand how algorithms work step-by-step",
 		icon: "algorithm-visualizer",
@@ -182,6 +174,16 @@ export const projects = [
 	},
 
 	{
+		title: "jentoo",
+		description: "Personal Gentoo overlay tracking GURU plus custom packages",
+		icon: "Box",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/jentoo" },
+		],
+	},
+
+
+	{
 		title: "basic84",
 		description: "TI-84 BASIC programs",
 		icon: "Box",
@@ -189,6 +191,7 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/basic84" },
 		],
 	},
+	
 	{
 		title: "console graphics engine",
 		description: "Console 3D graphics engine",
