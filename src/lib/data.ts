@@ -136,14 +136,6 @@ export const projects = [
 
 
 	{
-		title: "lazynmap",
-		description: "Keyboard-driven terminal UI for nmap",
-		icon: "Terminal",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/lazynmap" },
-		],
-	},
-	{
 		title: "gentooinstall",
 		description: "Interactive Gentoo installer built in Go",
 		icon: "Terminal",
