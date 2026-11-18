@@ -121,30 +121,6 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/skills" },
 		],
 	},
-
-
-
-	{
-		title: "openats",
-		description: "An open source ATS collection service",
-		icon: "Terminal",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/openats" },
-		],
-	},
-
-
-
-	{
-		title: "gentooinstall",
-		description: "Interactive Gentoo installer built in Go",
-		icon: "Terminal",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/gentooinstall" },
-		],
-	},
-
-
 	{
 		title: "evetools",
 		description: "Eve Online tools",
@@ -152,6 +128,14 @@ export const projects = [
 		links: [
 			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/evetools/" },
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/evetools" },
+		],
+	},
+	{
+		title: "eveindustry",
+		description: "Industry management interface for EVE Online",
+		icon: "Box",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/eveindustry" },
 		],
 	},
 
@@ -174,6 +158,30 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/jentoo" },
 		],
 	},
+
+		{
+		title: "gentooinstall",
+		description: "Interactive Gentoo installer built in Go",
+		icon: "Box",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/gentooinstall" },
+		],
+	},
+
+
+
+	{
+		title: "openats",
+		description: "An open source ATS collection service",
+		icon: "Box",
+		links: [
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/openats" },
+		],
+	},
+
+
+
+
 
 
 	{
