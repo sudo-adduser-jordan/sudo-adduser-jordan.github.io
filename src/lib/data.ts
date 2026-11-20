@@ -68,34 +68,7 @@ export const projects = [
 			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/algorithm-visualizer/" },
 		],
 	},
-	{
-		title: "stroke prediction",
-		description: "A supervised machine Random Forest Classifier to predict patient stroke risk",
-		icon: "/streamlit.svg",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/stroke-prediction" },
-			{ label: "demo", href: "https://stroke-prediction-sklearn.streamlit.app/" },
-		],
-	},
-	{
-		title: "marketmailer",
-		description: "Live Eve Online market dump and mail service",
-		icon: "marketmailer",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/marketmailer" },
-			{ label: "demo", href: "https://sudo-adduser-jordan.github.io/marketmailer/" },
-		],
-	},
 
-	{
-		title: "code racer",
-		description: "Multiplayer coding game built with Next.js",
-		icon: "/coderacer.png",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/code-racer" },
-			{ label: "demo", href: "https://coderacer.dev/" },
-		],
-	},
 
 	{
 		title: "skills",
