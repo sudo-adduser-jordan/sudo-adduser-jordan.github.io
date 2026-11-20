@@ -98,13 +98,14 @@ export const projects = [
 	},
 
 	{
-		title: "actions",
-		description: "Reusable GitHub Actions workflows",
-		icon: "Workflow",
+		title: "skills",
+		description: "Agent skills collection",
+		icon: "Sparkles",
 		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/actions" },
+			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/skills" },
 		],
 	},
+
 	{
 		title: "scripts",
 		description: "Shell scripts for setup and backups",
@@ -113,14 +114,8 @@ export const projects = [
 			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/scripts" },
 		],
 	},
-	{
-		title: "skills",
-		description: "Agent skills collection",
-		icon: "Sparkles",
-		links: [
-			{ label: "gh", href: "https://github.com/sudo-adduser-jordan/skills" },
-		],
-	},
+
+
 	{
 		title: "evetools",
 		description: "Eve Online tools",
